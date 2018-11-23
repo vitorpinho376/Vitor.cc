@@ -49,3 +49,7 @@
 .icon-instagram:before {
   content: "\e908";
 }
+
+body { font-family: 'Open Sans', sans-serif; }
+h1 { font-size: 120px; font-weight: 400; color: #262F3A; line-height: 163px; }
+p { font-size: 32px; font-weight: 400; color: rgba(38,47,58,0.64); line-height: 64px; margin: 24px 0; }
