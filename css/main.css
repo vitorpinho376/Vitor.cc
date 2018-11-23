@@ -74,6 +74,7 @@ b { font-weight: 600; }
 .neutral-link { font-size: 16px; line-height: 24px; }
 .social-link-item { color: rgba(38,47,58,0.64); font-size: 32px; padding: 24px; }
 .landing .nav-link { font-size: 16px; }
+.project-links a { display: block; line-height: 40px; margin-bottom: 16px; }
 
 .mob-menu { color: rgba(38,47,58,0.64); font-size: 24px; }
 
@@ -81,15 +82,17 @@ b { font-weight: 600; }
 
 header { width: 100%; background: #FFF; box-shadow: 0 2px 2px 0 rgba(0,0,0,0.08); line-height: 72px; position: fixed; z-index: 15; }
 header.landing { box-shadow: none; position: relative; }
-.footer-nav { margin-bottom: 88px; }
+.footer-nav, footer { margin-bottom: 88px; }
 .footer-nav li { display: block; line-height: 104px; margin: 24px 0; }
 .footer-nav span { font-size: 18px; color: #262F3A; line-height: 56px; display: inline-block; margin-left: 24px; }
 .footer-nav-item { width: 400px; text-align: right; background-color: #F6F8F9; padding: 24px 32px; font-weight: 600; font-size: 24px; color: rgba(38,47,58,0.64); line-height: 104px;}
-footer .social-links a { margin: 0 4%; }
+footer .social-links a { margin: 0 88px 0 0; }
 
 /* Content */
 
 .featured-line { background-color: #504DE3; height: 6px; width: 100%; border-radius: 60px; margin-bottom: 32px; }
+.project-info-id { margin-bottom: 56px; }
+
 
 /* Animations */
 
