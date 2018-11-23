@@ -1,5 +1,11 @@
 /* Global */
 
+* { font-smooth: always; }
+.main-logo img { width: 80px; height: auto; }
+.mob-only { display: none; }
+.centered { text-align: center; }
+section { margin: 88px 0; }
+
 @font-face { font-family: 'vitorcc';
   src:  url('../icons/vitorcc.eot?kitt9g');
   src:  url('../icons/vitorcc.eot?kitt9g#iefix') format('embedded-opentype'),
@@ -50,6 +56,63 @@
   content: "\e908";
 }
 
-body { font-family: 'Open Sans', sans-serif; }
-h1 { font-size: 120px; font-weight: 400; color: #262F3A; line-height: 163px; }
-p { font-size: 32px; font-weight: 400; color: rgba(38,47,58,0.64); line-height: 64px; margin: 24px 0; }
+/* Headings & Font */
+
+body { font-family: 'Open Sans', sans-serif; font-weight: 400; }
+h1 { font-size: 120px; color: #262F3A; line-height: 163px; }
+h3 { font-size: 72px; color: #262F3A; }
+p { font-size: 28px; color: rgba(38,47,58,0.64); line-height: 64px; margin: 24px 0; }
+span { font-size: 28px; color: rgba(38,47,58,0.64); line-height: 56px; display: block; }
+b { font-weight: 600; }
+.compact-heading { font-size: 32px; color: #262F3A; }
+.compact-p { font-size: 18px; color: rgba(38,47,58,0.64); line-height: 24px; }
+
+/* Actionables */
+
+.link { font-weight: 600; color: rgba(38,47,58,0.64);  }
+.inline-link { font-size: 32px; line-height: 64px; }
+.neutral-link { font-size: 16px; line-height: 24px; }
+.social-link-item { color: rgba(38,47,58,0.64); font-size: 32px; padding: 24px; }
+.landing .nav-link { font-size: 16px; }
+
+.mob-menu { color: rgba(38,47,58,0.64); font-size: 24px; }
+
+/* Nav */
+
+header { width: 100%; background: #FFF; box-shadow: 0 2px 2px 0 rgba(0,0,0,0.08); line-height: 72px; position: fixed; z-index: 15; }
+header.landing { box-shadow: none; position: relative; }
+.footer-nav { margin-bottom: 88px; }
+.footer-nav li { display: block; line-height: 104px; margin: 24px 0; }
+.footer-nav span { font-size: 18px; color: #262F3A; line-height: 56px; display: inline-block; margin-left: 24px; }
+.footer-nav-item { width: 400px; text-align: right; background-color: #F6F8F9; padding: 24px 32px; font-weight: 600; font-size: 24px; color: rgba(38,47,58,0.64); line-height: 104px;}
+footer .social-links a { margin: 0 4%; }
+
+/* Content */
+
+.featured-line { background-color: #504DE3; height: 6px; width: 100%; border-radius: 60px; margin-bottom: 32px; }
+
+/* Animations */
+
+.come-in {
+  transform: translateY(150px);
+  animation: come-in 0.8s ease forwards;
+}
+.come-in:nth-child(odd) {
+  animation-duration: 0.6s; /* So they look staggered */
+}
+
+@keyframes come-in {
+  to { transform: translateY(0); }
+}
+
+.come-out {
+  transform: translateY(-150px);
+  animation: come-in 0.8s ease forwards;
+}
+.come-out:nth-child(odd) {
+  animation-duration: 0.6s; /* So they look staggered */
+}
+
+@keyframes come-out {
+  to { transform: translateY(0); }
+}
