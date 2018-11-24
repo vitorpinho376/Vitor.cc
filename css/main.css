@@ -80,8 +80,8 @@ b { font-weight: 600; }
 
 /* Nav */
 
-header { width: 100%; background: #FFF; box-shadow: 0 2px 2px 0 rgba(0,0,0,0.08); line-height: 72px; position: fixed; z-index: 15; }
-header.landing { box-shadow: none; position: relative; }
+header { width: 100%; background: #FFF; box-shadow: 0 2px 2px 0 rgba(0,0,0,0.08); line-height: 72px; position: fixed; z-index: 15; top: 0; }
+header.landing, header.neutral-header { box-shadow: none; position: relative; }
 .footer-nav, footer { margin-bottom: 88px; }
 .footer-nav li { display: block; line-height: 104px; margin: 24px 0; }
 .footer-nav span { font-size: 18px; color: #262F3A; line-height: 56px; display: inline-block; margin-left: 24px; }
@@ -92,6 +92,8 @@ footer .social-links a { margin: 0 88px 0 0; }
 
 .featured-line { background-color: #504DE3; height: 6px; width: 100%; border-radius: 60px; margin-bottom: 32px; }
 .project-info-id { margin-bottom: 32px; margin-top: 24px; }
+.image-info-holder .image-holder { background: #504DE3; border-radius: 3px; text-align: center; padding: 40px; margin-bottom: 24px; }
+.image-info-holder .image-holder img { width: auto; height: 180px; margin: 0 auto; vertical-align: middle; }
 
 /* Carousel */
 
@@ -157,7 +159,7 @@ footer .social-links a { margin: 0 88px 0 0; }
   .footer-nav, footer { margin-bottom: 16px; }
 
   header.floating-header { line-height: 72px; display: block !important; position: relative; top: 0; left: 0; right: 0; }
-  header.landing { display: none; }
+  header.landing, header.neutral-header { display: none; }
   header.come-out { position: fixed; }
   .footer-nav li { margin: 8px 0; }
 
