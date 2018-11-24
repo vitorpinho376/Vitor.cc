@@ -132,3 +132,36 @@ footer .social-links a { margin: 0 88px 0 0; }
 @keyframes come-out {
   to { transform: translateY(0); }
 }
+
+/* Media Queries */
+
+@media screen and (max-width: 480px) {
+  .mob-only { display: block; }
+  section { margin: 24px 0; }
+  h1 { font-size: 40px; line-height: 56px; }
+  h3 { font-size: 32px; line-height: 48px; }
+  p { font-size: 18px; line-height: 32px; margin: 24px 0; }
+  span { font-size: 18px; line-height: 32px; display: block; }
+  .compact-heading { font-size: 24px; line-height: 32px; }
+  .compact-p { font-size: 16px; line-height: 24px; }
+  .footer-nav span { display: none; }
+
+  .container { padding-right: 24px; padding-left: 24px; }
+
+  .link { font-weight: 600; color: rgba(38,47,58,0.64);  }
+  .inline-link { font-size: 18px; line-height: 32px; }
+  .neutral-link { font-size: 16px; line-height: 24px; }
+  .landing .nav-link { font-size: 16px; }
+  .social-links { text-align: center; margin-top: 0; }
+  footer .social-links a { margin: 56px auto; display: block; }
+  .footer-nav, footer { margin-bottom: 16px; }
+
+  header.floating-header { line-height: 72px; display: block !important; position: relative; top: 0; left: 0; right: 0; }
+  header.landing { display: none; }
+  header.come-out { position: fixed; }
+  .footer-nav li { margin: 8px 0; }
+
+  .featured-line { margin-bottom: 16px; height: 3px;  }
+  .spot-info-holder { margin-bottom: 48px;}
+
+}
