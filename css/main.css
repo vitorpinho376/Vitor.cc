@@ -116,6 +116,9 @@ footer .social-links a { margin: 0 88px 0 0; }
 .grabbable:active { cursor: grabbing;   cursor: -moz-grabbing; cursor: -webkit-grabbing; }
 
 #whatsgood-carousel .carousel-indicators li { background-color: #FF4411; }
+#farmblocks-carousel .carousel-indicators li { background-color: #3498DB; }
+#wiziq-carousel .carousel-indicators li { background-color: #F58220; }
+#giso-carousel .carousel-indicators li { background-color: #C8C637; }
 
 
 /* Animations */
@@ -176,6 +179,9 @@ footer .social-links a { margin: 0 88px 0 0; }
   .spot-info-holder { margin-bottom: 48px;}
 
   .work-info-holder .image-holder { position: relative; }
-  .work-info-holder .image-holder img, .featured-image img { height: 105%; width: auto; left: -50%; right: -50%; position: absolute; }
+  .work-info-holder .image-holder img, .featured-image img { height: 105%; width: auto; right: -25%; position: absolute; }
+  .carousel-inner { height: 90vh; }
+  .carousel-inner img { height: 90vh; width: auto !important; position: absolute; transform: translateX(-50%); left: 50%; }
+
 
 }
