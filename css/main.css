@@ -58,7 +58,7 @@ section { margin: 88px 0; }
 
 /* Headings & Font */
 
-body { font-family: 'Open Sans', sans-serif; font-weight: 400; }
+body { font-family: 'Open Sans', sans-serif; font-weight: 400; max-width: 100%; overflow-x: hidden; }
 h1 { font-size: 120px; color: #262F3A; line-height: 163px; }
 h3 { font-size: 72px; color: #262F3A; }
 p { font-size: 28px; color: rgba(38,47,58,0.64); line-height: 64px; margin: 24px 0; }
@@ -80,7 +80,7 @@ b { font-weight: 600; }
 
 /* Nav */
 
-header { width: 100%; background: #FFF; box-shadow: 0 2px 2px 0 rgba(0,0,0,0.08); line-height: 72px; position: fixed; z-index: 15; top: 0; }
+header { width: 100%; max-width: 100%; background: #FFF; box-shadow: 0 2px 2px 0 rgba(0,0,0,0.08); line-height: 72px; position: fixed; z-index: 15; top: 0; }
 header.landing, header.neutral-header { box-shadow: none; position: relative; }
 .footer-nav, footer { margin-bottom: 88px; }
 .footer-nav li { display: block; line-height: 104px; margin: 24px 0; }
@@ -97,6 +97,8 @@ footer .social-links a { margin: 0 88px 0 0; }
 .work-info-holder .image-holder { background: #F6F8F9; border-radius: 3px; text-align: center; margin-bottom: 24px; overflow: hidden; height: 350px; }
 .work-info-holder .image-holder img { width: 105%; height: auto; margin: 0 auto; vertical-align: middle; }
 .work-info-holder { margin-bottom: 32px; }
+.featured-image { width: 100%; height: 380px; background-color: #504DE3; overflow: hidden; margin-bottom: 32px; }
+.featured-image img { width: 105%; height: auto; }
 
 
 /* Carousel */
@@ -109,6 +111,9 @@ footer .social-links a { margin: 0 88px 0 0; }
 .carousel-indicators li { flex: 1; margin: 5px; width: 100%; height: 7px; opacity: .2; transition: all 0.2s ease; background-color: #000; }
 .carousel-indicators li.active { opacity: 1; }
 .carousel-indicators li:hover { transform: scale(1, 2); opacity: .8; }
+
+.grabbable { cursor: move; cursor: grab; cursor: -moz-grab; cursor: -webkit-grab; }
+.grabbable:active { cursor: grabbing;   cursor: -moz-grabbing; cursor: -webkit-grabbing; }
 
 #whatsgood-carousel .carousel-indicators li { background-color: #FF4411; }
 
@@ -171,6 +176,6 @@ footer .social-links a { margin: 0 88px 0 0; }
   .spot-info-holder { margin-bottom: 48px;}
 
   .work-info-holder .image-holder { position: relative; }
-  .work-info-holder .image-holder img { height: 105%; width: auto; left: -50%; right: -50%; position: absolute; }
+  .work-info-holder .image-holder img, .featured-image img { height: 105%; width: auto; left: -50%; right: -50%; position: absolute; }
 
 }
