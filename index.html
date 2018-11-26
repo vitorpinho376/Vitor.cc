@@ -22,7 +22,7 @@
             <div class="col-sm">
               <a class="main-logo" href="#"><img src="img/main-logo.png" /></a>
               <div class="menu-holder float-right">
-                <a href="#" class="mob-menu"><i class="icon icon-menu"></i></a>
+                <a href="#" class="mob-menu" data-toggle="modal" data-target="#exampleModal"><i class="icon icon-menu"></i></a>
               </div>
             </div>
           </div>
@@ -348,7 +348,7 @@
               <span>Vitor Pinho builds awesome things for Web and Mobile</span>
             </li>
             <li class="module">
-              <a href="#" class="footer-nav-item">Contact Me</a>
+              <a href="#" class="footer-nav-item" data-toggle="modal" data-target="#exampleModal2">Contact Me</a>
               <span>I’m available for new projects</span>
             </li>
           </nav>
@@ -368,6 +368,92 @@
 
     </div>
     </footer>
+
+    <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog cover-screen" role="document">
+    <div class="modal-content cover-screen">
+      <a href="#" class="close" data-dismiss="modal" aria-label="Close"><i class="icon icon-close"></i></a>
+      <a class="main-logo" href="#"><img src="img/main-logo.png" /></a>
+      <nav class="menu-box">
+          <a class="link disabled-link" href="#">Home</a>
+          <a class="link neutral-link" href="#">Services</a>
+          <a class="link neutral-link" href="#">Work</a>
+          <a class="link neutral-link" href="#">About</a>
+          <a class="link neutral-link" href="#">Contact</a>
+          <a href="#" class="social-link-item module"><i class="icon icon-dribbble"></i></a>
+          <a href="#" class="social-link-item module"><i class="icon icon-facebook"></i></a>
+          <a href="#" class="social-link-item module"><i class="icon icon-instagram"></i></a>
+          <a href="#" class="social-link-item module"><i class="icon icon-linkedin"></i></a>
+          <a href="#" class="social-link-item module"><i class="icon icon-messenger"></i></a>
+          <a href="#" class="social-link-item module"><i class="icon icon-mail"></i></a>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog contact-dialog" role="document">
+<div class="modal-content contact-modal">
+  <a href="#" class="close" data-dismiss="modal" aria-label="Close"><i class="icon icon-close"></i></a>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <h4 class="compact-heading">Contact me</h4>
+        <p class="compact-p">You know what to do… You can contact me on <a href="#" class="link inline-link">Messenger</a> or <a href="#" class="link inline-link">E-mail</a> as well.</p>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <!-- Form Content -->
+      <form>
+          <div class="row">
+            <div class="col-sm col-md-4">
+               <label for="exampleInputEmail1">Name</label>
+            </div>
+            <div class="col-sm col-md-8">
+               <input type="text" class="form-control" placeholder="Type in your name" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm col-md-4">
+               <label for="exampleInputEmail1">Business Name</label>
+            </div>
+            <div class="col-sm col-md-8">
+               <input type="text" class="form-control" placeholder="(Optional)">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm col-md-4">
+               <label for="exampleInputEmail1">E-mail</label>
+            </div>
+            <div class="col-sm col-md-8">
+               <input type="email" class="form-control" placeholder="Type in your e-mail" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm col-md-4">
+               <label for="exampleInputEmail1">Message</label>
+            </div>
+            <div class="col-sm col-md-8">
+                <textarea class="form-control" rows="3" placeholder="Type in your message" required></textarea>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm col-md-8 offset-md-4">
+                <button type="submit" class="btn btn-primary">Send Message <i class="icon icon-arrow"></i></button>
+            </div>
+          </div>
+        </form>
+  </div>
+
+
+  </div>
+</div>
+</div>
+</div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

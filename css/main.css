@@ -66,17 +66,29 @@ span { font-size: 28px; color: rgba(38,47,58,0.64); line-height: 56px; display: 
 b { font-weight: 600; }
 .compact-heading { font-size: 32px; color: #262F3A; }
 .compact-p { font-size: 18px; color: rgba(38,47,58,0.64); line-height: 24px; }
+.modal .compact-heading { font-size: 40px; font-weight: 600; }
 
 /* Actionables */
 
+a { transition: all 0.2s ease; }
 .link { font-weight: 600; color: rgba(38,47,58,0.64);  }
 .inline-link { font-size: 32px; line-height: 64px; }
+.compact-p .inline-link { font-size: 18px; line-height: 24px; }
 .neutral-link { font-size: 16px; line-height: 24px; }
 .social-link-item { color: rgba(38,47,58,0.64); font-size: 32px; padding: 24px; }
 .landing .nav-link { font-size: 16px; }
 .project-links a { display: block; line-height: 40px; margin-bottom: 16px; }
-
+.btn.btn-primary { background-color: #504DE3; box-shadow: 0 16px 80px 0 rgba(0,0,0,0.08); border: 0; font-size: 18px; font-weight: 600; padding: 16px; border-radius: 4px; }
+.btn.btn-primary .icon { margin-left: 40px; }
 .mob-menu { color: rgba(38,47,58,0.64); font-size: 24px; }
+
+/* Formfields */
+
+label, .form-control { display: inline-block; margin: 16px 0; }
+label { font-weight: 600; font-size: 18px; color: rgba(38,47,58,0.64); }
+.form-control { background: #FFFFFF; border: 1px solid rgba(0,0,0,0.08); box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16); }
+form .btn { margin: 16px 0; }
+
 
 /* Nav */
 
@@ -115,11 +127,29 @@ footer .social-links a { margin: 0 88px 0 0; }
 .grabbable { cursor: move; cursor: grab; cursor: -moz-grab; cursor: -webkit-grab; }
 .grabbable:active { cursor: grabbing;   cursor: -moz-grabbing; cursor: -webkit-grabbing; }
 
-#whatsgood-carousel .carousel-indicators li { background-color: #FF4411; }
-#farmblocks-carousel .carousel-indicators li { background-color: #3498DB; }
-#wiziq-carousel .carousel-indicators li { background-color: #F58220; }
-#giso-carousel .carousel-indicators li { background-color: #C8C637; }
+#whatsgood-carousel .carousel-indicators li, #whatsgood-carousel { background-color: #FF4411; }
+#farmblocks-carousel .carousel-indicators li, #farmblocks-carousel { background-color: #3498DB; }
+#wiziq-carousel .carousel-indicators li, #wiziq-carousel { background-color: #F58220; }
+#giso-carousel .carousel-indicators li, #giso-carousel { background-color: #C8C637; }
 
+/* Modal */
+
+.modal.fade { background-color: rgba(80,77,227,0.89); padding: 0 !important; }
+.modal-dialog.cover-screen { margin: 0; width: 100%; height: 100vh; max-width: 100%; }
+.modal-content.cover-screen { padding: 60px; position: absolute; top: 0; bottom: 0; left: 0; right: 0; border-radius: 0; border: 0; overflow-y: auto; }
+.cover-screen .main-logo { margin: 24px auto; }
+.close { color: rgba(0,0,0,0.16); line-height: 32px; z-index: 9999; }
+.cover-screen .main-logo img { width: 180px; height: auto; }
+.cover-screen .close, .contact-dialog .close { position: absolute; right: 5%; top: 5%; }
+.menu-box { width: 100%; padding: 24px; text-align: center; }
+.menu-box a { display: block; margin: 5% auto; }
+.menu-box .disabled-link { opacity: 0.16; font-size: 32px; color: #262F3A; line-height: 56px; pointer-events: none; }
+.menu-box .neutral-link { font-size: 32px; line-height: 56px;}
+
+.contact-dialog { max-width: 800px; }
+.modal-content.contact-modal { width: 100%; background-color: #FFF; border-radius: 20px; padding: 32px; }
+
+.alert { background-color: #504DE3; font-weight: 600; font-size: 18px; color: #FFFFFF; line-height: 80px; text-align: center; }
 
 /* Animations */
 
@@ -149,7 +179,7 @@ footer .social-links a { margin: 0 88px 0 0; }
 
 /* Media Queries */
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 800px) {
   .mob-only { display: block; }
   section { margin: 24px 0; }
   h1 { font-size: 40px; line-height: 56px; }
@@ -157,6 +187,7 @@ footer .social-links a { margin: 0 88px 0 0; }
   p { font-size: 18px; line-height: 32px; margin: 24px 0; }
   span { font-size: 18px; line-height: 32px; display: block; }
   .compact-heading { font-size: 24px; line-height: 32px; }
+  .modal .compact-heading { font-size: 24px; font-weight: 600; }
   .compact-p { font-size: 16px; line-height: 24px; }
   .footer-nav span { display: none; }
 
@@ -182,6 +213,10 @@ footer .social-links a { margin: 0 88px 0 0; }
   .work-info-holder .image-holder img, .featured-image img { height: 105%; width: auto; right: -25%; position: absolute; }
   .carousel-inner { height: 90vh; }
   .carousel-inner img { height: 90vh; width: auto !important; position: absolute; transform: translateX(-50%); left: 50%; }
-
-
+  label, .form-control { display: inline-block; margin: 8px 0; }
+  .btn.btn-primary { display: block; width: 100%; padding: 16px 8px; }
+  .modal-content.contact-modal { padding: 24px 16px; border: 0; border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
+  .modal-dialog { margin: 5rem 0 0 0;  }
+  .contact-dialog .close { top: 4%; }
+  .menu-box a { display: block; margin: 20% auto; }
 }
