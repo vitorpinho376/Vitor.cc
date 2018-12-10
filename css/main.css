@@ -109,9 +109,10 @@ footer .social-links a { margin: 0 88px 0 0; }
 .work-info-holder .image-holder { background: #FFF; border-radius: 3px; text-align: center; margin-bottom: 24px; overflow: hidden; height: 350px; }
 .work-info-holder .image-holder img { width: auto; height: 100%; margin: 0 auto; vertical-align: middle; }
 .work-info-holder { margin-bottom: 32px; }
-.featured-image { width: 100%; height: 380px; background-color: #504DE3; overflow: hidden; margin-bottom: 32px; }
+.featured-image { width: 100%; height: 380px; background-color: #504DE3; overflow: hidden; margin-bottom: 32px; border-radius: 16px; }
 .featured-image img { width: 105%; height: auto; }
-
+.avatar { height: 1000px; }
+.avatar img { width: 100%; }
 
 /* Carousel */
 
@@ -174,6 +175,15 @@ footer .social-links a { margin: 0 88px 0 0; }
 }
 
 /* Media Queries */
+
+@media screen and (max-width: 1300px) {
+  section { margin: 72px 0; }
+  h1 { font-size: 90px; color: #262F3A; line-height: 112px; }
+  h3 { font-size: 60px; color: #262F3A; }
+  p { font-size: 24px; color: rgba(38,47,58,0.64); line-height: 40px; margin: 24px 0; }
+  .inline-link { font-size: 24px; line-height: 40px; }
+
+}
 
 @media screen and (max-width: 800px) {
   .mob-only { display: block; }
