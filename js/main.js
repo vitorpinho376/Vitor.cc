@@ -1,3 +1,10 @@
+//Scroll Reveal - Animate Section
+
+window.sr = ScrollReveal();
+window.sr = ScrollReveal({ reset: true });
+sr.reveal('.module');
+
+
 //Scroll Header - Animate Header
 
      $(window).scroll(function() {
