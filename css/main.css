@@ -70,9 +70,11 @@ b { font-weight: 600; }
 
 /* Actionables */
 
-a { transition: all 0.2s ease; }
+a, .footer-nav-item, button { transition: all 0.2s ease; }
+.main-logo:hover { opacity: .8; }
 .link { font-weight: 600; color: rgba(38,47,58,0.64);  }
-.inline-link { font-size: 24px; line-height: 40px; }
+.link:hover { color: rgba(80,77,227,.7); text-decoration: none;  }
+.inline-link { font-size: 24px; line-height: 40px; color: rgba(80,77,227,1); }
 .compact-p .inline-link { font-size: 18px; line-height: 24px; }
 .neutral-link { font-size: 16px; line-height: 24px; }
 .social-link-item { color: rgba(38,47,58,0.64); font-size: 32px; padding: 24px; }
@@ -80,15 +82,20 @@ a { transition: all 0.2s ease; }
 .project-links a { display: block; line-height: 40px; margin-bottom: 16px; }
 .btn.btn-primary { background-color: #504DE3; box-shadow: 0 16px 80px 0 rgba(0,0,0,0.08); border: 0; font-size: 18px; font-weight: 600; padding: 16px; border-radius: 4px; }
 .btn.btn-primary .icon { margin-left: 40px; }
+.btn-primary:hover { box-shadow: 0 16px 80px 0 rgba(0,0,0,0.32); }
+.btn-primary:focus, .btn-primary:active { background: rgba(80,77,227,0.80) !important; box-shadow: 0 16px 80px 0 rgba(0,0,0,0) !important; }
 .mob-menu { color: rgba(38,47,58,0.64); font-size: 24px; }
+.mob-menu:hover, .mob-menu:hover i, .social-link-item:hover { color: rgba(80,77,227,1); text-decoration: none !important; }
 
 /* Formfields */
 
 label, .form-control { display: inline-block; margin: 16px 0; }
 label { font-weight: 600; font-size: 18px; color: rgba(38,47,58,0.64); }
-.form-control { background: #FFFFFF; border: 1px solid rgba(0,0,0,0.08); box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16); }
+.form-control { background: #FFF; border: 2px solid rgba(0,0,0,0); box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16); color: #262F3A; }
+.form-control::placeholder { color: rgba(38,47,58,0.64); }
 form .btn { margin: 16px 0; }
-
+.form-control:focus { background: #FFF; border: 2px solid #504DE3; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.16); }
+textarea { resize: none; }
 
 /* Nav */
 
@@ -97,13 +104,15 @@ header.landing, header.neutral-header { box-shadow: none; position: relative; }
 .footer-nav, footer { margin-bottom: 88px; }
 .footer-nav li { display: block; line-height: 104px; margin: 24px 0; }
 .footer-nav span { font-size: 18px; color: #262F3A; line-height: 56px; display: inline-block; margin-left: 24px; }
-.footer-nav-item { width: 400px; text-align: right; background-color: #F6F8F9; padding: 24px 32px; font-weight: 600; font-size: 24px; color: rgba(38,47,58,0.64); line-height: 104px;}
+.footer-nav-item { width: 400px; text-align: right; background-color: #F6F8F9; padding: 24px 32px; font-weight: 600; font-size: 24px; color: rgba(38,47,58,0.64); line-height: 104px; border-radius: 8px; }
+.footer-nav-item:hover { background-color: #504DE3; color: #FFF; text-decoration: none; }
 footer .social-links a { margin: 0 88px 0 0; }
 
 /* Content */
 
 .featured-line { background-color: #504DE3; height: 6px; width: 100%; border-radius: 60px; margin-bottom: 32px; }
 .project-info-id { margin-bottom: 32px; margin-top: 24px; }
+.project-links, .project-info-id { margin-left: 16px; }
 .image-info-holder .image-holder { background: #504DE3; border-radius: 3px; text-align: center; padding: 40px; margin-bottom: 24px; }
 .image-info-holder .image-holder img { width: auto; height: 180px; margin: 0 auto; vertical-align: middle; }
 .work-info-holder .image-holder { background: #FFF; border-radius: 3px; text-align: center; margin-bottom: 24px; overflow: hidden; height: 350px; }
@@ -113,7 +122,7 @@ footer .social-links a { margin: 0 88px 0 0; }
 .featured-image img { width: 105%; height: auto; }
 .avatar { height: 1000px; }
 .avatar img { width: 100%; }
-.extra-divisor { height: 1px; background-color: rgba(0,0,0,0.16); margin: 24px auto; width: 100%; }
+.extra-divisor { height: 1px; background-color: rgba(0,0,0,0.08); margin: 24px auto; width: 100%; }
 
 /* Carousel */
 
@@ -179,9 +188,9 @@ footer .social-links a { margin: 0 88px 0 0; }
 
 @media screen and (max-width: 1300px) {
   section { margin: 72px 0; }
-  h1 { font-size: 80px; color: #262F3A; line-height: 94px; }
+  h1 { font-size: 86px; color: #262F3A; line-height: 94px; }
   h3 { font-size: 56px; color: #262F3A; }
-  p { font-size: 20px; color: rgba(38,47,58,0.64); line-height: 32px; margin: 24px 0; }
+  p, span { font-size: 20px; color: rgba(38,47,58,0.64); line-height: 40px; margin: 24px 0; }
   .inline-link { font-size: 18px; line-height: 32px; }
 
 }

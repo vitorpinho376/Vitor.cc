@@ -1,0 +1,12 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Vitor Pinho -- Senior Product Designer -- https://github.com/vitorpinho376
+
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    jQuery, Bootstrap
