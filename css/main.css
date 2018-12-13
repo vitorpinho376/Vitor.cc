@@ -149,8 +149,7 @@ footer .social-links a { margin: 0 88px 0 0; }
 .cover-screen .main-logo { margin: 24px auto; }
 .close { color: rgba(0,0,0,0.16); line-height: 32px; z-index: 9999; }
 .cover-screen .main-logo img { width: 180px; height: auto; }
-.cover-screen .close { position: absolute; right: 5%; top: 5%; }
-.contact-dialog .close { position: absolute; right: 15%; top: 72px; }
+.cover-screen .close, .contact-dialog .close { position: absolute; right: 5%; top: 5%; }
 .menu-box { width: 100%; padding: 24px; text-align: center; }
 .menu-box a { display: block; margin: 5% auto; }
 .menu-box .disabled-link { opacity: 0.16; font-size: 32px; color: #262F3A; line-height: 56px; pointer-events: none; }
@@ -211,7 +210,6 @@ footer .social-links a { margin: 0 88px 0 0; }
   .footer-nav span { display: none; }
 
   .container { padding-right: 24px; padding-left: 24px; }
-  .carousel-item { height: auto; }
 
   .link { font-weight: 600; color: rgba(38,47,58,0.64);  }
   .inline-link { font-size: 20px; line-height: 32px; }
@@ -225,6 +223,7 @@ footer .social-links a { margin: 0 88px 0 0; }
   header.landing, header.neutral-header { display: none; }
   header.come-out { position: fixed; }
   .footer-nav li { margin: 8px 0; }
+  .carousel-item { height: auto; }
 
   .featured-line { margin-bottom: 16px; height: 3px;  }
   .spot-info-holder { margin-bottom: 48px;}
@@ -233,10 +232,8 @@ footer .social-links a { margin: 0 88px 0 0; }
   .featured-image img { height: 105%; width: auto; right: -25%; position: absolute; }
   label, .form-control { display: inline-block; margin: 8px 0; }
   .btn.btn-primary { display: block; width: 100%; padding: 16px 8px; }
-  .modal-content.contact-modal { padding: 0 !important; border: 0; border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
-  .modal-content .container { padding: 0 !important; }
+  .modal-content.contact-modal { padding: 24px 16px; border: 0; border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
   .modal-dialog { margin: 5rem 0 0 0;  }
+  .contact-dialog .close { top: 4%; }
   .menu-box a { display: block; margin: 20% auto; }
-
-  .contact-dialog .close { position: absolute; right: 15%; top: 32px; }
 }
