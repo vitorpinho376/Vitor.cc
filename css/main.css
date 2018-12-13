@@ -223,6 +223,7 @@ footer .social-links a { margin: 0 88px 0 0; }
   header.landing, header.neutral-header { display: none; }
   header.come-out { position: fixed; }
   .footer-nav li { margin: 8px 0; }
+  .carousel-item { height: auto; }
 
   .featured-line { margin-bottom: 16px; height: 3px;  }
   .spot-info-holder { margin-bottom: 48px;}
