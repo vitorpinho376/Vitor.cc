@@ -219,7 +219,7 @@ footer .social-links a { margin: 0 88px 0 0; }
   footer .social-links a { margin: 56px auto; display: block; }
   .footer-nav, footer { margin-bottom: 16px; }
 
-  header.floating-header { line-height: 72px; display: block !important; position: relative; top: 0; left: 0; right: 0; }
+  header.floating-header { line-height: 72px; display: block !important; position: relative; top: 0; left: 0; right: 0; z-index: 9999; }
   header.landing, header.neutral-header { display: none; }
   header.come-out { position: fixed; }
   .footer-nav li { margin: 8px 0; }
