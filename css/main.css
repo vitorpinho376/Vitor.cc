@@ -121,15 +121,14 @@ footer .social-links a { margin: 0 88px 0 0; }
 .work-info-holder { margin-bottom: 32px; }
 .featured-image { width: 100%; height: 380px; background-color: #504DE3; overflow: hidden; margin-bottom: 32px; border-radius: 16px; }
 .featured-image img { width: 105%; height: auto; }
-.avatar { height: 1000px; }
-.avatar img { width: 100%; }
+.avatar { width: 500px; height: 500px; margin: 0 auto; border-radius: 100%; }
+.avatar img { width: auto; height: 100%; margin-left: -25%; }
 .extra-divisor { height: 1px; background-color: rgba(0,0,0,0.08); margin: 24px auto; width: 100%; }
 
 /* Carousel */
 
 .carousel { margin-bottom: 32px; }
 .carousel-inner { overflow: hidden; background-color: #504DE3; max-height: 780px; }
-.carousel-item { height: 780px; }
 .carousel-inner img { width: 100%; margin: 0 auto; }
 .carousel-control-prev, .carousel-control-next { display: none; }
 .flex-row { width: 100%; display: flex; flex-direction: row; }
@@ -194,6 +193,7 @@ footer .social-links a { margin: 0 88px 0 0; }
   h3 { font-size: 56px; color: #262F3A; }
   p, span { font-size: 20px; color: rgba(38,47,58,0.64); line-height: 40px; margin: 24px 0; }
   .inline-link { font-size: 18px; line-height: 32px; }
+  .carousel-item { height: 780px; }
 
 }
 
