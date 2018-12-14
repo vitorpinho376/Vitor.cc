@@ -100,7 +100,7 @@ textarea { resize: none; }
 
 /* Nav */
 
-header { width: 100%; max-width: 100%; background: #FFF; box-shadow: 0 2px 2px 0 rgba(0,0,0,0.08); line-height: 72px; position: fixed; z-index: 15; top: 0; }
+header { width: 100%; max-width: 100%; background: #FFF; box-shadow: 0 2px 2px 0 rgba(0,0,0,0.08); line-height: 72px; position: fixed; z-index: 9999; top: 0; }
 header.landing, header.neutral-header { box-shadow: none; position: relative; }
 .footer-nav, footer { margin-bottom: 88px; }
 .footer-nav li { display: block; line-height: 104px; margin: 24px 0; }
@@ -219,7 +219,7 @@ footer .social-links a { margin: 0 88px 0 0; }
   footer .social-links a { margin: 56px auto; display: block; }
   .footer-nav, footer { margin-bottom: 16px; }
 
-  header.floating-header { line-height: 72px; display: block !important; position: relative; top: 0; left: 0; right: 0; z-index: 9999; }
+  header.floating-header { line-height: 72px; display: block !important; position: relative; top: 0; left: 0; right: 0; }
   header.landing, header.neutral-header { display: none; }
   header.come-out { position: fixed; }
   .footer-nav li { margin: 8px 0; }
