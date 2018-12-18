@@ -132,7 +132,7 @@ footer .social-links a { margin: 0 88px 0 0; }
 /* Carousel */
 
 .carousel { margin-bottom: 32px; }
-.carousel-inner { overflow: hidden; background-color: #504DE3; max-height: 100vh; }
+.carousel-inner { overflow: hidden; background-color: #504DE3; max-height: 1024px; }
 .carousel-inner img { width: 100%; margin: 0 auto; }
 .carousel-control-prev, .carousel-control-next { display: none; }
 .flex-row { width: 100%; display: flex; flex-direction: row; }
