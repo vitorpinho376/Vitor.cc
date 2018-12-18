@@ -104,7 +104,7 @@ textarea { resize: none; }
 
 /* Nav */
 
-header { width: 100%; max-width: 100%; background: #FFF; box-shadow: 0 2px 2px 0 rgba(0,0,0,0.08); line-height: 72px; position: fixed; z-index: 9999; top: 0; }
+header { width: 100%; max-width: 100%; background: #FFF; box-shadow: 0 2px 2px 0 rgba(0,0,0,0.08); line-height: 72px; position: fixed; z-index: 998; top: 0; }
 header.landing, header.neutral-header { box-shadow: none; position: relative; }
 .footer-nav, footer { margin-bottom: 88px; }
 .footer-nav li { display: block; line-height: 104px; margin: 24px 0; }
