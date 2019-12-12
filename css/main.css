@@ -80,6 +80,7 @@ h1 { font-family: barricada-pro, serif; font-size: 68px; color: #FFFFFF; letter-
 .main-hero { position: fixed; top: 0; right: 0; bottom: 0; left: 0; width: 100%; height: 100vh; padding: 20px; }
 .hero-content p { font-size: 18px; color: #FFFFFF; letter-spacing: 0; max-width: 640px; margin: 32px 0; }
 .client-section { padding: 0 0 32px; }
+p.detail-tagline { border-radius: 6px; display: inline-block; margin: 0 0 16px !important; color: rgba(255,255,255,.5); font-size: 16px; letter-spacing: 2px; text-transform: uppercase; }
 
 /* Actionables */
 
