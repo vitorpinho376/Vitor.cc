@@ -60,7 +60,7 @@
       <source src="video/hd-view.mp4" type="video/mp4">
     </video>
 
-    <video autoplay muted loop id="bg-video-mob">
+    <video autoplay muted loop playsinline id="bg-video-mob">
       <source src="video/mobile-hd-view.mp4" type="video/mp4">
     </video>
 
@@ -137,6 +137,35 @@
         });
         }).resize();
 
+    </script>
+
+    <script>
+      var video;
+      var canvas;
+
+      function startPlayback()
+      {
+      if (!video) {
+        video = document.createElement('video');
+        video.src = 'video/mobile-hd-view.mp4';
+        video.loop = true;
+        video.addEventListener('playing', paintVideo);
+      }
+      video.play();
+      }
+
+      function paintVideo()
+      {
+      if (!canvas) {
+        canvas = document.createElement('canvas');
+        canvas.width = video.videoWidth;
+        canvas.height = video.videoHeight;
+        document.body.appendChild(canvas);
+      }
+      canvas.getContext('2d').drawImage(video, 0, 0, canvas.width, canvas.height);
+      if (!video.paused)
+        requestAnimationFrame(paintVideo);
+      }
     </script>
   </body>
 </html>
