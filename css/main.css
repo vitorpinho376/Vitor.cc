@@ -76,6 +76,7 @@ header { position: absolute; top: 0; width: 100%; line-height: 40px; z-index: 9;
 h1 { font-family: barricada-pro, serif; font-size: 68px; color: #FFFFFF; letter-spacing: 4.25px; }
 .tagline { font-size: 18px; color: rgba(255,255,255,0.72); letter-spacing: 0; text-align: center; vertical-align: middle; }
 #bg-video { position: relative; right: 0; bottom: 0; min-width: 100%; height: 100vh; }
+#bg-video-mob { display: none; }
 .main-hero { position: fixed; top: 0; right: 0; bottom: 0; left: 0; width: 100%; height: 100vh; padding: 20px; }
 .hero-content p { font-size: 18px; color: #FFFFFF; letter-spacing: 0; max-width: 640px; margin: 32px 0; }
 .client-section { padding: 0 0 32px; }
@@ -137,12 +138,15 @@ footer { width: 100%; background: transparent; text-align: center; position: fix
 
   h1 { font-size: 40px; }
   #bg-video { display: none; }
+  #bg-video-mob { display: block; top: 0; position: fixed; }
   .main-hero { position: relative; height: auto; }
   .main-hero p { width: 100%; max-width: auto; }
 
-  .client-section a { display: block; margin: 24px auto; }
-  .social-grid a { display: block; margin: 32px auto; }
+  .client-section { display: flex; flex-wrap: wrap; }
+  .client-section a { font-size: 22px; margin: 0; padding: 16px 0; width: 50%; }
+  .social-grid { text-align: center; }
+  .social-grid a { display: block; font-size: 60px; margin: 48px auto; }
 
-  footer { position: relative; text-align: left; }
+  footer { position: relative; text-align: center; }
 
 }
