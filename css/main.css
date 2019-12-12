@@ -125,6 +125,11 @@ footer { width: 100%; background: transparent; text-align: center; position: fix
 }
 
 
+@supports (-webkit-overflow-scrolling: touch) {
+  body { height: 100%; overflow-y: scroll; -webkit-overflow-scrolling: touch; }
+}
+
+
 /* Media Queries */
 
 @media screen and (max-width: 800px) {
