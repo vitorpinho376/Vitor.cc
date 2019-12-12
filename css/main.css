@@ -144,7 +144,7 @@ footer { width: 100%; background: transparent; text-align: center; position: fix
 
   h1 { font-size: 40px; }
   #bg-video { display: none; }
-  #bg-video-mob { display: block; width: 100%; top: 0; right: 0; position: fixed; }
+  #bg-video-mob { display: block; top: 0; position: fixed; }
   video { margin: 0; padding: 0; object-fit: fill; }
 
   .main-hero { position: relative; height: auto; }
