@@ -7,6 +7,13 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+.pixel {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
 @font-face {
   font-family: 'vitorcc';
   src:  url('../icons/vitorcc.eot?fbfl07');
@@ -31,6 +38,10 @@ body {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.right .db-btn {
+  float: right;
 }
 
 .icon-external:before {
@@ -135,9 +146,36 @@ a {
   box-shadow: 0 20px 60px 0 rgba(0,0,0,0.25);
 }
 
+.db-btn {
+    padding: 16px;
+    border-radius: 60px;
+    font-size: 16px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16);
+    color: rgba(0,0,0,1);
+    background-color: #FFF;
+  }
+
+  .db-btn i {
+    margin-right: 8px;
+    vertical-align: middle;
+    position: relative;
+    top: -2px;
+    color: rgba(255,17,36,.5);
+  }
+
+  .db-btn:hover {
+    background: rgba(255,17,36,0.10);
+    color: rgba(255,17,36,1);
+    box-shadow: 0 20px 60px 0 rgba(0,0,0,0.25);
+  }
+
+  .db-btn:hover i {
+    color: rgba(255,17,36,1);
+  }
+
 .primary-btn {
   color: #FFF;
-  background: rgba(255,17,36,1);;
+  background: rgba(255,17,36,1);
 }
 
 .primary-btn:hover {
@@ -292,6 +330,10 @@ footer {
 /* Media Queries */
 
 @media screen and (min-width: 768px) {
+
+  .db-btn {
+    border-radius: 4px;
+  }
 
   .actual-work-holder {
     text-align: left;
