@@ -1,0 +1,27 @@
+{
+  "name": "vitor.mobi",
+  "version": "0.1.0",
+  "description": "Vitor Pinho Website - Redesign",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch ./scss -o ./css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vitorpinho376//Vitor.mobi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vitorpinho376//Vitor.mobi/issues"
+  },
+  "homepage": "https://github.com/vitorpinho376//Vitor.mobi/#readme",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.5.0",
+    "node-sass": "^4.14.0",
+    "popper.js": "^1.16.1",
+    "sass": "^1.26.3"
+  }
+}
